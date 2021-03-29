@@ -92,7 +92,7 @@ public class GETCategoriesAndParametersTests {
                 .body("options.productCreationEnabled", equalTo(false));
     }
 
-    @Test()
+    @Test
     public void getNonExistingCategoryById() {
         //42540aec-367a-4e5e-b411 is a part of id for "Elektronika", so should be invalid
         String nonExistingId = "42540aec-367a-4e5e-b411";
@@ -124,7 +124,7 @@ public class GETCategoriesAndParametersTests {
                 .body("parameters[0].dictionary.id[1]", equalTo("11323_2"));
     }
 
-    @Test()
+    @Test
     public void getParametersForNonExistingCategoryById() {
         //42540aec-367a-4e5e-b411 is a part of id for "Elektronika", so should be invalid
         String nonExistingId = "42540aec-367a-4e5e-b411";
